@@ -60,15 +60,24 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 {"id":7,"first_name":"Robbi","university":"Salem University","email":"rbrister6@redcross.org"},
 {"id":8,"first_name":"Colline","university":"Coastal Carolina University","email":"cbrosh7@alibaba.com"},
 {"id":9,"first_name":"Michail","university":"Universidad Católica de Ávila","email":"mrome8@shinystat.com"},
+// {"id":11,"first_name":"Michail","university":"Universidad Católica de Ávila","email":"mrome8@shinystat.com"},
 {"id":10,"first_name":"Hube","university":"Universitat Rovira I Virgili Tarragona","email":"hlethbrig9@foxnews.com"}]
 
 /* Request 1: Create a new array called universities that contains all the universities in the graduates array.  
 Once you have the new array created, sort the universities alphabetically and log the result. */
 
-const universities = graduates.map(f=> {
-  return f.university})
-  universities.sort()
-  console.log(universities)
+const universities = [];
+  const universitiesT = graduates.map(f=> {
+    return f.university})
+  universitiesT.sort()
+  // remove duplicates
+  universitiesT.forEach(function(item,idx,arr) {
+      if(idx === 0 || (item != arr[idx-1]) ) {
+      universities.push(item)
+      }
+    });
+//    console.log(universitiesT)
+    console.log(universities)
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
 The resulting contact information should have a space between the first name and the email information like this: 
@@ -99,6 +108,7 @@ uniTemp.sort()
     }
   });
 
+//  console.log(uniTemp);
   console.log(uni);
 
 
