@@ -34,7 +34,7 @@ forEach goes through each element of the array and works directly with the origi
 
 2. What is the difference between a function and a method?
 
-A method is a function inside of an object and can be used referencing the object name with a dot folowing and the method name.
+A method is a function inside of an object and can be used referencing the object name with a dot following and the method name.
 
 3. What is closure?
 
