@@ -34,8 +34,9 @@ console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to
 
 // Explanation: 
 
+// a function, if it does not re-use a name from something above it in nesting order, inherits any names above it in nesting order.
 
-const external = "I'm outside the function";
+const external = "I'm outside the function (a function, if it does not re-use a name from something above it in nesting order, inherits any names above it in nesting order)";
 
 function myFunction() {
   console.log(external);
