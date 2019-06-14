@@ -34,18 +34,18 @@ forEach goes through each element of the array and works directly with the origi
 
 2. What is the difference between a function and a method?
 
-A method is a function inside of an object and can be used referencing the object name with a dot folowing and the method name.
+A method is a function inside of an object and can be used referrencing the object name with a dot folowing and the method name.
 
 3. What is closure?
 
 Closure is the fact that variables referenced in nested functions can refer to variables in a higher order of nesting but not to variables created at a lower level in the nesting.
 
 4. Describe the four rules of the 'this' keyword.
+
 Principle 1: Window/Global Object Binding 
     When in the global scope, the value of “this” will be the window/console Object;
 Principle 2: Implicit Binding
     Whenever a function is called by a preceding dot, the object before that dot is this.
-r this so when we log out the this keyword we get a different object each time it’s run.
 Principle 3: New binding
     Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
 Principle 4: Explicit binding
